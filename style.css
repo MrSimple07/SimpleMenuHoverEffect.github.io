@@ -1,0 +1,35 @@
+body{
+    background: #111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list{
+    margin-right: 30px;
+    padding-top: 30px;
+    list-style: none;
+}
+
+.menu__link{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.menu__link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: crimson;
+    transition: width 0.3s ease;
+}
+
+.menu__link:hover::after{
+    width: 100%;
+}
